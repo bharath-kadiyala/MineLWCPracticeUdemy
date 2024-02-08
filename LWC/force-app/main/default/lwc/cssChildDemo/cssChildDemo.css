@@ -1,0 +1,12 @@
+/* Assuming this is a CSS file for your Lightning Web Component */
+
+:host {
+    display: block;
+    background-color: red;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.blue {
+    background-color: blue;
+}

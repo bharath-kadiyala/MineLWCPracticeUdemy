@@ -1,0 +1,17 @@
+/* element or tag selector, class , pseudo  */
+
+p{
+    font-size: 22px;
+    color: green;
+    border: 1px solid red;
+}
+
+.user{
+    color: pink;
+    font-size: 25px;
+}
+
+.user:hover{
+    font-size: 50px;
+    color: red;
+}

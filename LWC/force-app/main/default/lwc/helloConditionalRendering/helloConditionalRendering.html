@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+    <div class="slds-var-m-around_medium">
+        <lightning-button 
+        variant="brand" label="Brand" 
+        title="Primary action" 
+        onclick={handleClick} 
+        class="slds-var-m-left_x-small"></lightning-button>
+        <template if:true={isVisible.case}>
+            <div>Welcom to Zero to Hero Serice</div>
+        </template>
+
+        <template if:false={isVisible.case}>
+            <div>You cant see the data. Please click the button</div>
+        </template>
+    </div>
+    </lightning-card>
+
+
+    <lightning-card title="Input based" class="slds-m-around_medium">
+    <div class="slds-var-m-around_medium">
+        <input type="text" onkeyup={showValue}/>
+        <template if:true={case2}>
+            <h1>Hurray.! You have typed correctly.</h1>
+        </template>
+    </div>
+    </lightning-card>
+
+</template>
